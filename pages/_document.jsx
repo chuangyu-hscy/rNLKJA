@@ -1,5 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import React from "react";
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
@@ -70,6 +69,22 @@ class MyDocument extends Document {
                 description:
                   "rNLKJA - Data Scientist, Programmer, and Tech Enthusiast. Explore my portfolio, blog posts, and data science projects.",
               }),
+            }}
+          />
+
+          {/* <!-- Google tag (gtag.js) --> */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-7W1VX9PH20"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7W1VX9PH20');
+          `,
             }}
           />
         </Head>
